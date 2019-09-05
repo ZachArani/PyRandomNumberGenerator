@@ -22,14 +22,11 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    #x = RandomNumGenerator.RandomGen.get_random_num()
+def get_num():
+      
     randGen = RandomGen()
-    
-    
     return str(randGen.get_num())
-
+    
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
