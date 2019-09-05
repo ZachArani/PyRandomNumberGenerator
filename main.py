@@ -14,7 +14,7 @@
 
 # [START gae_python37_app]
 from flask import Flask
-import RandomNumGenerator
+from RandomNumGenerator import RandomGen
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
@@ -24,8 +24,11 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    x = RandomNumGenerator.RandomGen.get_random_num()
-    return str(x)
+    #x = RandomNumGenerator.RandomGen.get_random_num()
+    randGen = RandomGen()
+    
+    
+    return str(randGen.get_num())
 
 
 if __name__ == '__main__':
