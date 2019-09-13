@@ -3,6 +3,8 @@
 This application is written in python using the Flask framework and hosted on Google's app engine. It can be viewed live at the following link:
 http://pyrandomnumbergenerator.appspot.com
 
+The github can be found here:
+https://github.com/agracy2246/PyRandomNumberGenerator
 
 ## Set up instructions
 Follow these steps to host this application on your own Google cloud account.
