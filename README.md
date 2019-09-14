@@ -72,7 +72,7 @@ Follow these steps to host this application on your own Google cloud account.
 <br>
 10.) The last step is to run the following command:  
 ` gcloud app deploy app.yaml --project <Your Project ID> `
-and enter **'y'** to complete deployment.
+and enter **'y'** to complete deployment.<br>
 ***Note:** Use the **Project ID** you took note of in **Step 4**.
 
 # Congratulations!
