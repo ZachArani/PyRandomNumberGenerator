@@ -11,13 +11,19 @@ Follow these steps to host this application on your own Google cloud account.
 
 1.)  Head to https://console.cloud.google.com and create a free account to use to host the application.  (Be sure to set up a free billing account.)
 <br>
+<br>
+<br>
 
 2.) Once your account is created, go ahead and head to the App Engine dashboard by clicking the hamburger icon in the top left corner and selecting "App Engine" -> "Dashboard."
 
 ![]( doc/1_AppEngine_DashBoard_Start.png )
 <br>
+<br>
+<br>
 3.) Click the project drop down arrow at the top left of the page, and click "Create Project" on the dialog menu that appears.
 ![]( doc/2_CreateProjectMenu.png )
+<br>
+<br>
 <br>
 4.) Fill out the the details, choose the billing account you created in step 1. Click "Create Project" when done.
 
@@ -25,15 +31,23 @@ Follow these steps to host this application on your own Google cloud account.
 
 ***Note:** You will need your **Project ID** during deployment so please keep note of this. Its found under ```App Engine -> Dashboard -> Project info```
 <br>
+<br>
+<br>
 5.) Click the "Activate Cloud Shell" icon at the top right of the page to open the cloud shell console.
 
 ![]( doc/4_OpenCloudShell.png )
 <br>
+<br>
+<br>
 6.) Clone the PyRandomNumberGenerator repository to your cloud console by running the following command:  
     ` git clone https://github.com/agracy2246/PyRandomNumberGenerator.git `
 <br>
+<br>
+<br>
 7.) Enter the directory you just created by running the following comand:  
     ` cd PyRandomNumberGenerator `
+<br>
+<br>
 <br>
 8.) To test your app locally (on the cloud shell), complete the steps:
   * Run the following command to create an isolated virtual environment:
@@ -49,12 +63,11 @@ Follow these steps to host this application on your own Google cloud account.
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 9.) Let's deploy! First we need to create an **application** that we can deploy. Run the following command:  
 ` gcloud app create `
 ***Note:** A prompt may ask for the region you would like the application hosted.
+<br>
+<br>
 <br>
 10.) The last step is to run the following command:  
 ` gcloud app deploy app.yaml --project <Your Project ID> `
