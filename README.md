@@ -65,6 +65,7 @@ Follow these steps to host this application on your own Google cloud account.
 <br>
 9.) Let's deploy! First we need to create an **application** that we can deploy. Run the following command:  
 ` gcloud app create `
+<br>
 ***Note:** A prompt may ask for the region you would like the application hosted.
 <br>
 <br>
